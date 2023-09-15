@@ -1,0 +1,156 @@
+/*PHOTOPRODUKTA*/
+.photo_product img {
+    margin: 60px 0 0 60px;
+    height: 550px;
+    border-radius: 20px 20px ;
+}
+
+
+
+/*OPUS*/
+
+.opus p {
+    color: white;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    
+}
+.opus p:not(:first-child):not(:last-child) {
+    margin-top: 50px;
+    
+    
+  }
+.opus {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+
+/*BUTTON*/
+button {
+    border: 0;
+    font-family: Futura,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.btn_sitku button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 30px ;
+}
+.btn_sitku button:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+.btn_size {
+    display: flex;
+    flex-wrap: wrap;
+}
+.size {
+    align-items: center;
+    border-radius: 50%; 
+    cursor: pointer;
+    display: flex; 
+    font-size: 18px; 
+    height: 45px; 
+    justify-content: center;
+    letter-spacing: 0;
+    margin: 4px; 
+    transition: all .5s; 
+    user-select: none;
+    width: 45px;
+}
+
+
+
+
+/*PRODUCT PRISE*/
+.prodyct_price {
+    display: flex;
+}
+.prodyct_price p {
+    background-color: red;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 20px;
+}
+.prodyct_price button {
+    margin: 15px 0 0 100px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+}
+.prodyct_price button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+@media only screen and (max-width: 1440px) {
+    .opus {
+    max-width: 500px;
+    margin-top: 60px;
+}
+.photo_product img {
+    margin: 60px 60px 0 0;
+  
+}
+}
+
+@media only screen and (max-width: 1024px) {
+    .object_info {
+        align-items: center;
+        flex-direction: column;
+    }
+    .photo_product img {
+        margin: 60px 0 ;
+      
+    }
+    .opus p {
+        text-align: center;
+        margin: 0 15px;
+    }
+    .prodyct_price {
+        margin-top: 20px;
+        flex-direction: column;
+        
+    }
+    .btn_sitku {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .btn_sitku button{
+        margin-bottom: 20px;
+    }
+    .btn_size {
+        width: 305px;
+        margin: 0 auto;
+    }
+    .prodyct_price p {
+        margin-bottom: 15px;
+    }
+    .prodyct_price button{
+        margin: 0px;
+    }
+    .size {
+        font-size: 16px; 
+        height: 35px; 
+        width: 35px;
+    }
+}
+@media only screen and (max-width: 858px) {
+    .photo_product img{
+        height: 450px;
+    }
+    
+}

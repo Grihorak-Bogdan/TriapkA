@@ -1,0 +1,324 @@
+
+/*----*/
+/*BODY*/
+/*----*/
+body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;   
+}
+body.lock{
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a , p{
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+* {
+    scrollbar-width: none;
+}
+
+/*------*/
+/*HEADER*/
+/*------*/
+#header,#footer{
+    
+    background-color: white;   
+}
+.panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.panel-header-sizes{
+    width: 90vw;
+    max-width: 80rem;
+}
+.logo{
+    display: flex;
+    cursor: pointer;
+    margin: auto 0;
+}
+.logo h1{
+    margin: auto 10px;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 30px;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+.katago {
+    margin: auto 0;
+}
+.katago a{
+    margin: 0 20px;
+    padding: 0 0 10px 0;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+.katago a:hover{
+    border-bottom: solid #000;
+}
+.login_btn{
+    margin: auto 0;
+    display: flex;
+}
+.login_btn img {
+    height: 45px;
+    width: 45px;
+}
+.header_burger {
+    display: none;
+}
+.back_mob_blaclout{
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+}
+.back_mob_blaclout{
+    background: #000;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity .5s;
+    width: 100vw;
+}
+.back_mob_blaclout.active{
+    opacity: 0.75;
+    pointer-events:all;
+}
+.katago_mob_nav{
+    display: none;
+}
+
+    /*-register-*/
+.register_login {
+    display: none;
+}
+.register_login.active{
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 50px;
+    position: absolute;
+    z-index: 20;
+}
+.register_login_div {
+    display: none;
+}
+.register_login_div.active {
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close_registr {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#sing h3{
+    margin: 40px 0 0 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+    /*-login-*/
+.login_register {
+        display: none;
+}
+.login_register.active{
+        display: flex;
+        border-radius: 20px;
+        background-color: white;
+        padding: 20px 50px;
+        position: absolute;
+        z-index: 20;
+}
+.login_register_div {
+        display: none;
+}
+.login_register_div.active {
+        width: 100vw;
+        height: 70vh;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.close_login {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+    /*-btn-*/
+.group{
+    margin: 30px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+.group label {
+    font-size: 16px;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto 10px auto 0;
+}
+.group input {
+    background-color: white;
+    text-decoration: none;
+    border: solid #000;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.btn_sing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_sing input {
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: solid #000;
+}
+.btn_sing input:hover {
+    background-color: white;
+    color: #000;
+}
+.btn_sing a {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*------------*/
+/*MAIN_SECTION*/
+/*------------*/
+#main_section{
+    min-height: 100vh;
+}
+
+/*------*/
+/*FOOTER*/
+/*------*/
+.footer {
+    min-height: 25vh;
+}
+.info_footer {
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto 0;
+    display: block;
+    text-align: center;
+}
+
+/* media-1440 */
+@media only screen and (max-width: 1440px) {
+    /*header*/
+    
+}
+/*media-1300*/
+@media only screen and (max-width: 1300px) {
+    /*header*/
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .login_btn img {
+        width: 35px;
+        height: 35px;
+        margin: 0 15px 0 0;
+    }
+
+}
+/*media-1024*/
+@media only screen and (max-width: 1024px) {
+    /*header*/
+    
+    .katago {
+        display: none;
+    }
+    .header_burger {
+        display: block;
+        margin: auto 0;
+        cursor: pointer;
+    }
+    .menu {
+        width: 35px;
+        height: 20px;
+        margin: 0 0 0 15px;
+    }
+    .katago_mob_nav.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        right: 0;
+        background-color: white;
+        height: 100vh;
+        top: 0;
+        padding: 60px 0 0 0;
+        overflow-y:scroll;
+    }
+    .katago_mob{
+        display: flex;
+        flex-direction: column;
+    }
+    .katago_mob a{
+        font-size: 18px;
+        padding: 20px 140px 20px 30px;
+    }
+    .katago_mob a:hover{
+        background-color: rgb(209, 209, 209);
+    }
+    .close_menu {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    /*main_section*/
+
+    /*footer*/
+}
+/*media-858*/
+@media only screen and (max-width: 858px) {
+    /*header*/
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_footer:not(:first-child) {
+        margin-top: 50px;
+      }
+    .register_login.active{
+        padding: 20px 20px;
+    }
+    .login_register.active{
+        padding: 20px 20px;
+    }
+}

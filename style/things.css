@@ -1,0 +1,70 @@
+/*main_section*/
+#main_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    color: white; 
+    margin-top: 3rem;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    border-bottom: 1px solid white;
+    padding: 0 0 2rem 0;
+}
+.vsi_tovaru{
+   max-width: 80rem;
+    
+}
+.vsi_tovaru_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*PRODUKT-CARDs*/
+.prodyct {
+    margin: 60px 63px;  
+    transition: opacity .5s ;
+}
+.prodyct:hover{
+    opacity: 0.7;    
+}
+.produkt_fon img {
+    height: 450px;
+    border-radius: 20px 20px 0 0;
+}
+.price{
+    background-color: white;
+    width: 300px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.price h4 , .price p {
+    margin: auto 15px;
+    padding: 15px 10px;
+}
+.price p{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .vsi_tovaru {
+        max-width: 54rem;
+    }
+   
+}
+@media only screen and (max-width: 858px) {
+    .vsi_tovaru {
+        max-width: 430px;
+    } 
+    .title {
+        font-size: 30px;
+    }
+    
+}
