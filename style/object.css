@@ -1,3 +1,14 @@
+
+:root {
+    
+    --color-3: #000;
+    --color-4: #fff;
+    --color-5: #000; /*for leter*/
+    --color-6: #fff; /*for leter*/
+    --color-7: #a6a6a6; /*for hover*/
+    --color-8: #323232;
+}
+
 /*PHOTOPRODUKTA*/
 .photo_product img {
     margin: 60px 0 0 60px;
@@ -10,7 +21,7 @@
 /*OPUS*/
 
 .opus p {
-    color: white;
+    color: var(--color-6);
     font-family: 'Tilt Prism', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
@@ -36,16 +47,16 @@ button {
 }
 .btn_sitku button{
     padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: 3px solid white;
+    background-color: var(--color-3);
+    color: var(--color-6);
+    border: 3px solid var(--color-6);
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
     margin: 10px 30px ;
 }
 .btn_sitku button:hover{
-    background-color: rgb(44, 43, 43);
+    background-color: var(--color-8);
 }
 
 .btn_size {
@@ -76,22 +87,22 @@ button {
 }
 .prodyct_price p {
     background-color: red;
-    color: white;
+    color: var(--color-6);
     padding: 10px 20px ;
     border-radius: 20px;
 }
 .prodyct_price button {
     margin: 15px 0 0 100px;
     padding: 10px 20px;
-    background-color: white;
-    color: black;
+    background-color: var(--color-4);
+    color: var(--color-5);
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
     height: 50px;
 }
 .prodyct_price button:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: var(--color-7);
 }
 
 @media only screen and (max-width: 1440px) {

@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
     scrollbar-width: none;
   }
 body{
-    background-color: black;
+    background-color: var(--color-3);
     padding: 0;
     margin: 0;   
 }
@@ -22,18 +22,29 @@ a , p{
     font-family: 'Tilt Prism', cursive;
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
-    color: black;
+    color: var(--color-5);
 }
 * {
     scrollbar-width: none;
 }
+:root {
+    /*--color-1: #ee7828;*/
+    /*--color-2: #202020;*/
+    --color-3: #000;
+    --color-4: #fff;
+    --color-5: #000; /*for leter*/
+    --color-6: #fff; /*for leter*/
+    --color-7: #a6a6a6; /*for hover*/
+}
+
+
 
 /*------*/
 /*HEADER*/
 /*------*/
 #header,#footer{
     
-    background-color: white;   
+    background-color: var(--color-4);   
 }
 .panel {
     display: flex;
@@ -69,7 +80,7 @@ a , p{
     font-family: 'Ubuntu', sans-serif;
 }
 .katago a:hover{
-    border-bottom: solid #000;
+    border-bottom: solid var(--color-3);
 }
 .login_btn{
     margin: auto 0;
@@ -88,7 +99,7 @@ a , p{
     pointer-events: none;
 }
 .back_mob_blaclout{
-    background: #000;
+    background: var(--color-3);
     height: 100vh;
     left: 0;
     position: fixed;
@@ -111,7 +122,7 @@ a , p{
 .register_login.active{
     display: flex;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--color-4);
     padding: 20px 50px;
     position: absolute;
     z-index: 20;
@@ -148,7 +159,7 @@ a , p{
 .login_register.active{
         display: flex;
         border-radius: 20px;
-        background-color: white;
+        background-color: var(--color-4);
         padding: 20px 50px;
         position: absolute;
         z-index: 20;
@@ -184,9 +195,9 @@ a , p{
     margin: auto 10px auto 0;
 }
 .group input {
-    background-color: white;
+    background-color: var(--color-4);
     text-decoration: none;
-    border: solid #000;
+    border: solid var(--color-3);
     font-family: 'Tilt Prism', cursive;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px 15px;
@@ -199,15 +210,15 @@ a , p{
 }
 .btn_sing input {
     cursor: pointer;
-    background-color: #000;
-    color: white;
+    background-color: var(--color-3);
+    color: var(--color-4);
     padding: 15px 25px;
     border-radius: 20px;
-    border: solid #000;
+    border: solid var(--color-3);
 }
 .btn_sing input:hover {
-    background-color: white;
-    color: #000;
+    background-color: var(--color-4);
+    color: var(--color-5);
 }
 .btn_sing a {
     margin: 0 0 20px 0;
@@ -278,7 +289,7 @@ a , p{
         flex-direction: column;
         z-index: 10;
         right: 0;
-        background-color: white;
+        background-color: var(--color-4);
         height: 100vh;
         top: 0;
         padding: 60px 0 0 0;
@@ -293,7 +304,7 @@ a , p{
         padding: 20px 140px 20px 30px;
     }
     .katago_mob a:hover{
-        background-color: rgb(209, 209, 209);
+        background-color: var(--color-7);
     }
     .close_menu {
         cursor: pointer;
@@ -317,6 +328,7 @@ a , p{
       }
     .register_login.active{
         padding: 20px 20px;
+        max-width: 80vw;
     }
     .login_register.active{
         padding: 20px 20px;
